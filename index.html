@@ -7,51 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <body>
 
         <header>
-            <img id="logo" src="images/newlogo1.png">
+            <center><img id="logo" src="images/newlogo1.png">
             <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home</a>
-  <a href="#">Gallery</a>
+                <div class="dropdown">
+  <a href="#" onclick="myFunction()" class="dropbtn" ><img id="arrow" src="images/Down-Arrow-PNG-Transparent-Image.png">Gallery</a>
+                    <div id="myDropdown" class="dropdown-content">
+                <ul id="tagMenu">
+                <template id="linkTemplate">
+                    <li><a href="#">Item1</a></li>
+                </template>
+            </ul>
+                    </div>
+                </div>
   <a href="#">About Iri</a>
   <a href="#">Contact us</a>
 </div>
-            <span onclick="openNav()"><img id="burger" src="images/burger.png"></span>
+            <span onclick="openNav()"><img id="burger" src="images/burger.png"></span></center>
         </header>
 
 
         <div id="main">
-            <div id="image">
-                <h3>Good things come in small packages, espeacially when it's jewellry</h3>
-            <img  id="first" src="images/pexels-photo-371102.jpeg">
-
+             <div class="container">
+        <img id="bcg" src="images/woman.jpg">
+           
+            <h1 id="centered">Check out the</h1>
+            <a id="link" href="gallery.html">GALLERY</a>
                 </div>
-            <div id="new">
-            <h3>New products</h3>
-            <p class="newproduct">Image</p>
-            <p class="newproduct">Image</p>
-            <p class="newproduct">Image</p>
+           
+            
+            <h3 class="title">New releases</h3>
+            <section id="list"></section>
+            <template class="eventTemplate">
+        <article class="event">
+            <h1></h1>
+             <img class="img" src="" alt="">
+            <p class="price">Price: Dkk <span></span></p>
+            
+            
+            <p><a class="read-more" href="single.html">Read more</a></p>
+        </article>
+    </template>
+                
+            
+
+
+
+</div>    
+           
+             <h2 id="quote">"Good things come in small packages,  especially when it is Iri Jewellery"
+            </h2>
+            <h3 class="title">Categories</h3>
+            <div class="categories">
+                <a class="cate" href="#"><img class="cat" src="images/bracelets.png"></a>
+                <a class="cate" href="#"><img class="cat" src="images/rings.png"></a>
+                <a class="cate" href="#"><img class="cat" src="images/earings.png"></a>
+                <a class="cate" href="#"><img class="cat" src="images/necklaces.png"></a>
+    
             </div>
+            
+            
+            
+            
+            
 
-            <div id="categories">
-            <h3>Categories</h3>
-                <p class="ctg">Image</p>
-                <p class="ctg">Image</p>
-                <p class="ctg">Image</p>
-                <p class="ctg">Image</p>
-                <p class="ctg">Image</p>
-                <p class="ctg">Image</p>
-            </div>
+            
+            
 
 
-
-            </div>
-     <footer>
-         <h2>Footer</h2>
-        </footer>
+    
+            
+       
+     
 
       <script src="main.js"></script>
     </body>

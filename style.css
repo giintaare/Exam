@@ -1,24 +1,131 @@
+#bcg {
+    width: 100%;
+    position: relative;
+}
 
-#logo{
+.container {
+    position: relative;
+    text-align: center;
+    color: dimgrey;
+}
+
+#centered {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    font-family: Vivaldi;
+    font-size: 30px;
+    ;
+}
+
+#link {
+    position: absolute;
+    top: 57%;
+    left: 6%;
+    
+    background-color:black;
+    opacity: 0.4;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: Open Sans;
+    font-size: 40px;
+    text-decoration: none;
+    color: lightpink;
+    ;
+}
+
+#quote {
+    text-align: center;
+    font-size: 20px;
+    font-family: Vivaldi;
+    
+    
+}
+ 
+
+#logo {
     height: 50px;
     grid-area: lg;
 }
 
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    right: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-family: Open Sans;
+}
+.cate:hover{
+    opacity: 0.6;
+}
+.cat{
+    width: 48%;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
 /* The navigation menu links */
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -28,12 +135,16 @@
     transition: 0.3s;
 }
 
+
 /* When you mouse over the navigation links, change their color */
+
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
+
 /* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -42,61 +153,126 @@
     margin-left: 50px;
 }
 
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #main {
     transition: margin-left .5s;
-
 }
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-#burger{
+#burger {
     width: 40px;
     flex: auto;
     float: right;
 }
 
-
-
-
-
-
-
-#first{
-    width: 100%;
-    //margin-left: -45px;//
-    position:relative;
-        }
-
-.newproduct{
+.newproduct {
     width: 50px;
     height: 100px;
     display: inline;
-
-
 }
 
-.ctg{
+.ctg {
     width: 50px;
     height: 50px;
     display: inline;
-
-
 }
 
-footer{
-    background-color: gray;
-    height: 50px;
-    margin-left: 0;
-
+/*.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "tl tl"
+        "it it"
 }
 
-        p{
-            border: 1px solid;
-            margin: 0;
-        }
+.title {
+    grid-area: tl;
+}
 
+.eventTemplate {
+    grid-area: it;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "it it";
+    text-align: center;
+}*/
+
+#list{
+    flex: auto;
+    
+    
+}
+.event{
+    float: left;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+
+
+
+p {
+    border: 1px solid;
+    margin: 0;
+}
+
+
+//*drop-down menu*//
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+#arrow{
+    width: 25px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: black}
+
+.show {display:block;}
