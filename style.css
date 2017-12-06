@@ -1,4 +1,11 @@
-
+.mainbody{
+        background-image: url(images/cover1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #quote {
+         margin-top: 150%;
+    }
 .footer {
     
     left: 0;
