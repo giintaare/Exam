@@ -53,12 +53,7 @@
     font-size: 20px;
     font-family: Open Sans;
 }
-.cate:hover{
-    opacity: 0.6;
-}
-.cat{
-    width: 48%;
-}
+
 
 /* The Modal (background) */
 .modal {
@@ -190,36 +185,27 @@
     display: inline;
 }
 
-/*.items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    grid-template-areas: 
-        "tl tl"
-        "it it"
-}
-.title {
-    grid-area: tl;
-}
-.eventTemplate {
-    grid-area: it;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "it it";
-    text-align: center;
-}*/
 
-#list{
-    flex: auto;
-    
-    
-}
+
+
 .event{
     float: left;
+    
     padding: 10px;
     text-align: center;
     
+    
+    
+}
+.event2{
+    float: left;
+    
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    border: 2px solid;
+    margin:5px; 
+    border-style: outset;
     
 }
 
@@ -308,17 +294,25 @@ div.panel {
         width: 42%;
         display: block;
     }
+    .event2{
+        width: 42%;
+        display: block;
+    }
     
     #singleEvent{
         width: 80%;
         margin-left: 7%;
     }
-    
+
     
 }
 
 @media screen and (min-width: 700px) {
     .event{
+        width: 28%;
+        display: block;
+    }
+    .event2{
         width: 28%;
         display: block;
     }
