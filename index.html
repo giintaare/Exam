@@ -8,13 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
+        
 
     </style>
 
     <body>
 
-        <header>
-            <center><img id="logo" src="images/newlogo1.png">
+       <header>
+           <center><a href="index.html"><img id="logomain" src="images/newlogo1.png"></a><span onclick="openNav()"><img id="burger" src="images/burger.png"></span><center>
+            <div id="desk">
+                
+                <a class="desko"href="#">Home</a>
+                <div class="dropdown">
+  <a id="dropbtn" class="desko" href="#">Gallery</a>
+  <div class="dropdown-content">
+    
+                <ul id="tagMenu">
+                    <a href="gallery.html">All</a>
+                <template id="linkTemplate">
+                    
+                    <li><a href="#">Item1</a></li>
+                </template>
+            </ul>
+  </div>
+</div>
+                <a class="desko" href="#">About Iri</a>
+                <a class="desko" href="#">Contacts</a>
+                
+                    
+            
+            
+            </div>
+                </center>
             <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html">Home</a>
@@ -35,7 +60,7 @@
   <a href="#">About Iri</a>
   <a href="#">Contact us</a>
 </div>
-            <span onclick="openNav()"><img id="burger" src="images/burger.png"></span></center>
+            </center>
         </header>
 
 
@@ -44,9 +69,7 @@
         <img id="bcg" src="images/woman.jpg">
         <center><img id="bcg2" src="images/cover.png"></center>
            
-            <h1 id="centered">Check out the</h1>
-            <a id="link" href="gallery.html">GALLERY</a>
-                </div>
+          
            
             <h2 id="quote">"Good things come in small packages,  especially when it is Iri Jewellery"
             </h2>
@@ -90,7 +113,7 @@
     
             
        
-     
+        </div>
 
       <script src="main.js"></script>
       <script src="main2.js"></script>

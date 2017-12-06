@@ -225,21 +225,19 @@ div.panel {
     
 }
 
-
+#desk{
+    display: none;
+}
+#logomain{
+        height: 60px;
+    }
 
 
 //*drop-down menu*//
-.dropbtn {
-    background-color: black;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
+
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: black;
+    background-color: lightgrey;
 }
 
 .dropdown {
@@ -268,7 +266,7 @@ div.panel {
     display: block;
 }
 
-.dropdown a:hover {background-color: black}
+.dropdown a:hover {color: lightgrey}
 
 .show {display:block;}
 
@@ -298,12 +296,50 @@ div.panel {
         width: 42%;
         display: block;
     }
+    #logomain{
+        height: 80px;
+    }
     
     #singleEvent{
         width: 80%;
         margin-left: 7%;
     }
 
+    #desk{
+        
+        display: inline;
+        
+    }
+    .desko{
+        text-decoration: none;
+        font-size: 15px;
+        color: gray;
+        margin-right: 10px;
+        font-family: Open Sans;
+        
+    }
+    .desko:hover{
+        color: lightgray;
+    }
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+    .sidenav, #burger{
+        display: none;
+    }
     
 }
 
