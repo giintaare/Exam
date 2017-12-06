@@ -228,7 +228,16 @@
     color: black;
 }
 
+//*accortion*//
+        a.accordion.active, a.accordion:hover {
+    background-color: #ccc; 
+}
 
+div.panel {
+    padding: 18px;
+    display: none;
+    
+}
 
 
 
