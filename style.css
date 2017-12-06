@@ -227,7 +227,7 @@
     text-decoration: none;
     color: black;
 }
-.butt:hover {
+.butt,  .buy:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 
@@ -314,7 +314,7 @@ div.panel {
         display: block;
     }
     #logomain{
-        height: 80px;
+        height: 50px;
     }
     
     #singleEvent{
@@ -333,7 +333,7 @@ div.panel {
         text-decoration: none;
         font-size: 15px;
         color: gray;
-        margin-right: 10px;
+        margin-right: 17px;
         font-family: Open Sans;
         
     }
@@ -359,10 +359,21 @@ div.panel {
     .sidenav, #burger{
         display: none;
     }
+    .mainbody{
+        background-image: url(images/cover.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #quote {
+         margin-top: 37%;
+    }
+     
+  
     
 }
 
 @media screen and (min-width: 700px) {
+    
     .event{
         width: 28%;
         display: block;
@@ -371,4 +382,17 @@ div.panel {
         width: 28%;
         display: block;
     }
+      #quote {
+         margin-top: 40%;
+    }
+    #logomain{
+        height: 80px;
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    #logomain{
+        height: 90px;
+    }
+    
 }
