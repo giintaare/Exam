@@ -16,7 +16,9 @@ function showPosts(data){
         let img = clone.querySelector(".img2");
         
          //....for single//
-        let link = clone.querySelector("a.read-more");
+        let link = clone.querySelector("a.read-more2");
+        
+        
         
         
         
@@ -28,6 +30,8 @@ function showPosts(data){
         img.setAttribute("src", theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url);
         
         
+        
+       link.setAttribute("href", "single.html?id="+theEvent.id); 
         
         
         list.appendChild(clone);

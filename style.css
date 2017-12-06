@@ -1,4 +1,15 @@
-#bcg {
+
+.footer {
+    
+    left: 0;
+    margin-bottom:  bottom: 0;
+    width: 100%;
+    background-color: dimgrey;
+    color: white;
+    text-align: center;
+}
+
+    #bcg {
     width: 100%;
     position: relative;
 }
@@ -190,11 +201,14 @@
 
 .event{
     float: left;
-    
+    background-color:ghostwhite;
+    display: table-cell;
     padding: 10px;
     text-align: center;
     
-    
+}   .event:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+
     
 }
 .event2{
@@ -212,6 +226,9 @@
 .read-more{
     text-decoration: none;
     color: black;
+}
+.butt:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 
 //*accortion*//
@@ -307,7 +324,9 @@ div.panel {
 
     #desk{
         
-        display: inline;
+        
+        display: table;
+        width: 100%;
         
     }
     .desko{
