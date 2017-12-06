@@ -83,7 +83,7 @@ function showEvents(data){
         //price.textContent =theEvent.acf.Price;
         //excerpt.innerHTML = theEvent.excerpt.rendered;
         //console.log(theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url)
-        img.setAttribute("src", theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url);
+        img.setAttribute("src", theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url);
         
         //....for single//
         link.setAttribute("href", "single.html?id="+theEvent.id);
@@ -133,4 +133,3 @@ window.onclick = function(event) {
     }
   }
 }
-

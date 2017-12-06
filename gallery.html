@@ -4,10 +4,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <style>
+  html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#cont {
+   min-height:100%;
+   position:relative;
+}
+
+#main {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-color: grey;
+}
+        #logomain{
+            height: 70px;
+        }
+
+    
+    
+    
+    
+    </style>
 </head>
 
 <body>
+    <div id="cont">
+     <header>
+            <center> <a href="index.html"><img id="logo" src="images/newlogo1.png"></a>
+            <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a class="accordion" href="index.html">Home</a>
+
+
+<a class="accordion" href="#">Gallery</a>
+<div class="panel">
+  <ul id="tagMenu">
+      <li><a class="menulist" href="gallery.html">All</a></li>
+                <template id="linkTemplate">
+                    
+                    <li><a class="menulist" href="#">Item1</a></li>
+                </template>
+            </ul>
+</div>
+
+<a class="accordion" href="#">About Iri</a>
+<a class="accordion" href="#">Contact</a>
+    </div>
+            <span onclick="openNav()"><img id="burger" src="images/burger.png"></span></center>
+        </header>
     
         <ul id="tagMenu">
                   
@@ -15,18 +71,28 @@
                     <li><a href="#">Item1</a></li>
                 </template>
             </ul>
-    <a href="index.html">Back</a>
+        <div id="main">
+    <center>
      <section id="list"></section>
             <template class="eventTemplate">
         <article class="event">
             <h1></h1>
-             <img class="img" src="" alt="">
+             <img class="img" src="" alt="" style="width:48%">
             <p class="price">Price: Dkk <span></span></p>
             
             
-            <p><a class="read-more" href="single.html">Read more</a></p>
+            
+            <p><button class="butt"><a class="read-more" href="single.html">Details</a></button></p>
         </article>
     </template>
+        </center>
+            </div>
+        
+        
+       
+    
+    </div>
     <script src="main.js"></script>
+
 </body>
 </html>

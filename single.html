@@ -4,17 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
+        <header>
+            <center> <a href="index.html"><img id="logo" src="images/newlogo1.png"></a>
+            <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a class="accordion" href="index.html">Home</a>
+
+
+<a class="accordion" href="#">Gallery</a>
+<div class="panel">
+  <ul id="tagMenu">
+      <li><a class="menulist" href="gallery.html">All</a></li>
+                <template id="linkTemplate">
+                    
+                    <li><a class="menulist" href="#">Item1</a></li>
+                </template>
+            </ul>
+</div>
+
+<a class="accordion" href="#">About Iri</a>
+<a class="accordion" href="#">Contact</a>
+    </div>
+            <span onclick="openNav()"><img id="burger" src="images/burger.png"></span></center>
+        </header>
     
 
     <section id="single">
-        <article class="event">
+        <article class="event" id="singleEvent">
             <h1></h1>
-            <p class="price">$<span></span></p>
+            
             <img class="img" src="" alt="">
             <div class="content"></div>
+            <p class="price">Price: Dkk<span></span></p>
+            <p class="materials">Materials:<span></span></p>
+            <button class="buy">Buy</button>
         </article>
     </section>
     <script src="main.js"></script>

@@ -173,7 +173,7 @@
 }
 
 #burger {
-    width: 40px;
+    width: 30px;
     flex: auto;
     float: right;
 }
@@ -198,11 +198,9 @@
         "tl tl"
         "it it"
 }
-
 .title {
     grid-area: tl;
 }
-
 .eventTemplate {
     grid-area: it;
     display: grid;
@@ -225,12 +223,14 @@
     
 }
 
-
-
-p {
-    border: 1px solid;
-    margin: 0;
+.read-more{
+    text-decoration: none;
+    color: black;
 }
+
+
+
+
 
 
 //*drop-down menu*//
@@ -276,3 +276,41 @@ p {
 .dropdown a:hover {background-color: black}
 
 .show {display:block;}
+
+.event{
+    width: 90%;
+    border: 2px solid;
+    margin:5px; 
+    border-style: outset;
+}
+#bcg2{
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+   #bcg{
+    display: none;
+}
+  #bcg2{
+    display: block;
+      width: 95%;
+} 
+    .event{
+        width: 42%;
+        display: block;
+    }
+    
+    #singleEvent{
+        width: 80%;
+        margin-left: 7%;
+    }
+    
+    
+}
+
+@media screen and (min-width: 700px) {
+    .event{
+        width: 28%;
+        display: block;
+    }
+}
