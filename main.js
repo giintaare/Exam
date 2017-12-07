@@ -33,18 +33,19 @@ function getallPosts() {
 }
 //for categories//
 function getPostsByTag(id) {
-  fetch("http://amberdream.dk/examwp/wp-json/wp/v2/posts?categories="+id).then(res=>res.json()).then(showEvents);
+  fetch("http://amberdream.dk/examwp/wp-json/wp/v2/posts?_embed&categories="+id).then(res=>res.json()).then(showEvents);
 }
 //for categories//
 function getSingleEventById(myId){
-  console.log(myId);
+  //console.log(myId);
     fetch("http://amberdream.dk/examwp/wp-json/wp/v2/posts/"+myId+"/?_embed").then(res=>res.json()).then(showSingleEvent);
 }
 
 function showSingleEvent(json) {
-  console.log(json);
+  //console.log(json);
     document.querySelector("#single h1").textContent = json.title.rendered;
-    //document.querySelector("#single .price span").textContent = json.acf.price;
+    document.querySelector("#single .price span").textContent = json.acf.price;
+    document.querySelector("#single .materials span").textContent = json.acf.material;
     document.querySelector("#single .content").innerHTML = json.content.rendered;
     document.querySelector("#single .img").setAttribute = json._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
    
@@ -66,7 +67,7 @@ function getMenu() {
 }
 
 function showMenu(tags){
-    console.log(tags);
+    //console.log(tags);
     let lt = document.querySelector("#linkTemplate").content;
     
     
@@ -75,18 +76,18 @@ function showMenu(tags){
     let parent = document.querySelector("#tagMenu");
     
     clone.querySelector("a").textContent=tag.name;
-    clone.querySelector("a").setAttribute("href", "gallery.html?tagid"+tag.id);
+    clone.querySelector("a").setAttribute("href", "gallery.html?tagid="+tag.id);
     parent.appendChild(clone); 
     });
     
 };
 function showEvents(data){
-    console.log(data)
+    console.log(data);
     let list = document.querySelector("#list");
     let template = document.querySelector(".eventTemplate").content;
     
     data.forEach(function(theEvent){
-        console.log(theEvent)
+        //console.log(theEvent)
         let clone = template.cloneNode(true);
         let title = clone.querySelector("h1");
         //let excerpt = clone.querySelector (".excerpt");
@@ -98,10 +99,11 @@ function showEvents(data){
         
         
         title.textContent =theEvent.title.rendered;
-        //price.textContent =theEvent.acf.Price;
+        img.setAttribute("src", theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url);
+        price.textContent =theEvent.acf.price;
         //excerpt.innerHTML = theEvent.excerpt.rendered;
         //console.log(theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url)
-        img.setAttribute("src", theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url);
+        //img.setAttribute("src", theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url);
         
         //....for single//
         link.setAttribute("href", "single.html?id="+theEvent.id);

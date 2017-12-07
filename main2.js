@@ -24,7 +24,7 @@ function showPosts(data){
         
         
         title.textContent =theEvent.title.rendered;
-        //price.textContent =theEvent.acf.Price;
+        price.textContent =theEvent.acf.price;
         //excerpt.innerHTML = theEvent.excerpt.rendered;
         //console.log(theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url)
         img.setAttribute("src", theEvent._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url);

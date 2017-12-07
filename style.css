@@ -6,15 +6,13 @@
     #quote {
          margin-top: 150%;
     }
-.footer {
-    
-    left: 0;
-    margin-bottom:  bottom: 0;
-    width: 100%;
-    background-color: dimgrey;
-    color: white;
-    text-align: center;
+.img2, .img{
+    border: 1px solid black;
+    padding: 3px;
 }
+
+
+
 
     #bcg {
     width: 100%;
@@ -234,6 +232,10 @@
     text-decoration: none;
     color: black;
 }
+.read-more2{
+    text-decoration: none;
+    color: black;
+}
 .butt,  .buy:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
@@ -308,6 +310,8 @@ div.panel {
    #bcg{
     display: none;
 }
+   
+    
   #bcg2{
     display: block;
       width: 95%;
@@ -400,6 +404,20 @@ div.panel {
 @media screen and (min-width: 900px) {
     #logomain{
         height: 90px;
+    }
+    #desk{
+        width: 60%;
+        border-bottom: 1px solid gray;
+        border-top: 1px solid gray;
+    }
+    .desko{
+        font-size: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    #quote {
+         font-size: 25px;
     }
     
 }
