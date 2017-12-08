@@ -12,7 +12,7 @@ function showPosts(data){
         let clone = template.cloneNode(true);
         let title = clone.querySelector(".h2");
         //let excerpt = clone.querySelector (".excerpt");
-        let price = clone.querySelector (".price2");
+        let price = clone.querySelector (".price2 span");
         let img = clone.querySelector(".img2");
         
          //....for single//

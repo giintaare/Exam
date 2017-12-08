@@ -91,7 +91,7 @@ function showEvents(data){
         let clone = template.cloneNode(true);
         let title = clone.querySelector("h1");
         //let excerpt = clone.querySelector (".excerpt");
-        let price = clone.querySelector (".price");
+        let price = clone.querySelector (".price span");
         let img = clone.querySelector(".img");
         
         //....for single//

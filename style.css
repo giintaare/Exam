@@ -1,10 +1,42 @@
-.mainbody{
-        background-image: url(images/cover1.png);
+.footer{
+   clear: both;
+    width: 100%;
+    background-color: gray;
+    border-top: 0;
+    padding: 20px;
+    
+    
+}
+.foot{
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.aha {
+    
+   padding: 15px;
+    text-align: center;
+    margin-top: -5px;
+    
+    
+}
+.SM{
+    
+    color: black;
+    text-decoration: none;
+    right: 30px;
+}
+
+
+    .mainbody{
+        background-image: url(images/Asset%202.png);
         background-size: contain;
         background-repeat: no-repeat;
     }
     #quote {
-         margin-top: 150%;
+         margin-top: 170%;
     }
 .img2, .img{
     border: 1px solid black;
@@ -43,7 +75,7 @@
     opacity: 0.4;
     padding-right: 5px;
     padding-left: 5px;
-    font-family: Open Sans;
+    font-family: roboto light;
     font-size: 40px;
     text-decoration: none;
     color: lightpink;
@@ -67,7 +99,7 @@
 .title {
     text-align: center;
     font-size: 20px;
-    font-family: Open Sans;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -87,6 +119,7 @@
 
 /* Modal Content/Box */
 .modal-content {
+    font-family: 'Roboto', sans-serif;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -144,6 +177,7 @@
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -210,6 +244,7 @@
     display: table-cell;
     padding: 10px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     
 }   .event:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
@@ -225,16 +260,19 @@
     border: 2px solid;
     margin:5px; 
     border-style: outset;
+    font-family: 'Roboto', sans-serif;
     
 }
 
 .read-more{
     text-decoration: none;
     color: black;
+    font-family: 'Roboto', sans-serif;
 }
 .read-more2{
     text-decoration: none;
     color: black;
+    font-family: 'Roboto', sans-serif;
 }
 .butt,  .buy:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
@@ -263,33 +301,32 @@ div.panel {
 
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: lightgrey;
+    
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
 }
-#arrow{
-    width: 25px;
-    
-}
+
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color:rgba(255,250,250,.8);
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+   
 }
 
 .dropdown-content a {
-    color: black;
+    color: gainsboro;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: 'Roboto', sans-serif;
 }
 
 .dropdown a:hover {color: lightgrey}
@@ -302,20 +339,9 @@ div.panel {
     margin:5px; 
     border-style: outset;
 }
-#bcg2{
-    display: none;
-}
 
 @media screen and (min-width: 500px) {
-   #bcg{
-    display: none;
-}
-   
-    
-  #bcg2{
-    display: block;
-      width: 95%;
-} 
+ 
     .event{
         width: 42%;
         display: block;
@@ -343,9 +369,9 @@ div.panel {
     .desko{
         text-decoration: none;
         font-size: 15px;
-        color: gray;
+        color: lightgrey;
         margin-right: 17px;
-        font-family: Open Sans;
+        font-family: 'Roboto', sans-serif;
         
     }
     .desko:hover{
@@ -356,6 +382,7 @@ div.panel {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+        font-family: 'Roboto', sans-serif;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
@@ -371,12 +398,12 @@ div.panel {
         display: none;
     }
     .mainbody{
-        background-image: url(images/cover.png);
+        background-image: url(images/web.jpg);
         background-size: contain;
         background-repeat: no-repeat;
     }
     #quote {
-         margin-top: 37%;
+         margin-top: 45%;
     }
      
   
@@ -384,6 +411,11 @@ div.panel {
 }
 
 @media screen and (min-width: 700px) {
+    .mainbody{
+        background-image: url(images/webo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     
     .event{
         width: 28%;
