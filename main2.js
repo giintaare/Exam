@@ -1,5 +1,5 @@
 function getData() {
-  fetch("http://amberdream.dk/examwp/wp-json/wp/v2/posts?_embed&per_page=3").then(res=>res.json()).then(showPosts);
+  fetch("http://amberdream.dk/examwp/wp-json/wp/v2/posts?_embed&per_page=16").then(res=>res.json()).then(showPosts);
 }
 
 function showPosts(data){

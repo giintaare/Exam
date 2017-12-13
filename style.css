@@ -1,60 +1,42 @@
-.footer{
-   clear: both;
-    width: 100%;
-    background-color: gray;
-    border-top: 0;
-    padding: 20px;
-    
-    
-}
-.foot{
-    width: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
+/* title */
+h1{
+    font-family: "Freestyle Script";
+    font-size: 26px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
     
 }
 
-.aha {
-    
-   padding: 15px;
-    text-align: center;
-    margin-top: -5px;
-    
-    
-}
-.SM{
-    
-    color: black;
-    text-decoration: none;
-    right: 30px;
-}
 
 
+
+/* main index page */
     .mainbody{
-        background-image: url(images/Asset%202.png);
+        background-image: url(images/cover1.png);
         background-size: contain;
         background-repeat: no-repeat;
+        width: 100%;
+        
+        
     }
     #quote {
          margin-top: 170%;
     }
-.img2, .img{
-    border: 1px solid black;
-    padding: 3px;
-}
-
-
 
 
     #bcg {
     width: 100%;
     position: relative;
 }
-
+/* text on top of background on index page */
 .container {
     position: relative;
     text-align: center;
     color: dimgrey;
+    font-family: sans-serif;
+    
 }
 
 #centered {
@@ -66,29 +48,8 @@
     ;
 }
 
-#link {
-    position: absolute;
-    top: 57%;
-    left: 6%;
-    
-    background-color:black;
-    opacity: 0.4;
-    padding-right: 5px;
-    padding-left: 5px;
-    font-family: roboto light;
-    font-size: 40px;
-    text-decoration: none;
-    color: lightpink;
-    ;
-}
 
-#quote {
-    text-align: center;
-    font-size: 20px;
-    font-family: Vivaldi;
-    
-    
-}
+
  
 
 #logo {
@@ -112,7 +73,7 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: auto; 
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -157,7 +118,8 @@
     top: 0;
     /* Stay at the top */
     right: 0;
-    background-color: #111;
+    background-color: #606464;
+    
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -174,7 +136,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #000000;
     display: block;
     transition: 0.3s;
     font-family: 'Roboto', sans-serif;
@@ -184,7 +146,7 @@
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #ec778a;
 }
 
 
@@ -208,7 +170,7 @@
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
-@media screen and (max-height: 450px) {
+@media screen and (min-width:500px) {
     .sidenav {
         padding-top: 15px;
     }
@@ -216,11 +178,16 @@
         font-size: 18px;
     }
 }
-
+/*menu icon */
 #burger {
     width: 30px;
     flex: auto;
     float: right;
+/*    padding-right: 5px;*/
+/*
+    position: fixed;
+    z-index: 1;
+*/
 }
 
 .newproduct {
@@ -237,10 +204,10 @@
 
 
 
-
+/* posts of all items fetched from WordPress */
 .event{
     float: left;
-    background-color:ghostwhite;
+    background-color:#ffffff;
     display: table-cell;
     padding: 10px;
     text-align: center;
@@ -264,6 +231,15 @@
     
 }
 
+/* button */
+.butt{
+    color: black;
+    background: #ec778a;
+    border-radius: 25px;
+   width: 6.7em;
+    height: 2.5em;
+    
+}
 .read-more{
     text-decoration: none;
     color: black;
@@ -274,8 +250,19 @@
     color: black;
     font-family: 'Roboto', sans-serif;
 }
+
+/* button on single page items */
+.buy{
+    border-radius: 25px;
+    width: 6.7em;
+    height: 2.5em;
+    background: #ec778a;
+    color: #000000;
+    cursor: pointer;
+}
 .butt,  .buy:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+
+    box-shadow: 0 8px 12px 0  rgba(0,0,0,0.2);
 }
 
 //*accortion*//
@@ -340,116 +327,110 @@ div.panel {
     border-style: outset;
 }
 
-@media screen and (min-width: 500px) {
- 
-    .event{
-        width: 42%;
-        display: block;
-    }
-    .event2{
-        width: 42%;
-        display: block;
-    }
-    #logomain{
-        height: 50px;
+
+
+@media screen and (min-width:1000px) {
+    .mainbody{
+        background-image: url(images/background.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
     }
     
-    #singleEvent{
-        width: 80%;
-        margin-left: 7%;
-    }
 
+
+    #logomain{
+        height: 80px;
+    }
+    
+
+
+/* for the desktop */
     #desk{
-        
+        border-top: black solid 2px;
+        border-bottom: black solid 2px;
         
         display: table;
-        width: 100%;
+        width: 50%;
+       
         
     }
     .desko{
         text-decoration: none;
-        font-size: 15px;
-        color: lightgrey;
+        font-size: 25px;
+        color: #000000;
         margin-right: 17px;
         font-family: 'Roboto', sans-serif;
         
     }
     .desko:hover{
-        color: lightgray;
+        color: #ec778a;
     }
     .dropdown-content a {
-    color: black;
+        
+    color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
         font-family: 'Roboto', sans-serif;
 }
+    #dropbtn:hover{
+        color: #ec778a;
+    }
+    
+    .dropdown-content{
+        background: #606464;
+        color: #ffffff;
+    }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #ec778a;}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
+
     .sidenav, #burger{
         display: none;
     }
-    .mainbody{
-        background-image: url(images/web.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    #quote {
-         margin-top: 45%;
-    }
-     
-  
-    
-}
 
-@media screen and (min-width: 700px) {
-    .mainbody{
-        background-image: url(images/webo.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
     
-    .event{
-        width: 28%;
-        display: block;
-    }
-    .event2{
-        width: 28%;
-        display: block;
-    }
-      #quote {
-         margin-top: 40%;
-    }
-    #logomain{
-        height: 80px;
-    }
+/*    about page*/
     
+   
+   
+video {
+  background: pink;
+  border: 2px solid pink;
+    border-radius: 5%;
+  
+    margin-top: 5%;
+      
 }
-@media screen and (min-width: 900px) {
-    #logomain{
-        height: 90px;
+ 
+    
+    .aboutpage{
+         
+  padding-right: 30px;
+  height: 100%;
+  width: 100%;
+  flex: auto;
+        float: right
+}
+    .container{
+        display: flex;
     }
-    #desk{
-        width: 60%;
-        border-bottom: 1px solid gray;
-        border-top: 1px solid gray;
-    }
-    .desko{
-        font-size: 25px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+    
+    
+    .text{
+        width: 90%;
+            margin-left: 10%;
+        padding-top: 10%;
         
     }
-    #quote {
-         font-size: 25px;
-    }
     
-}
+    .iri{
+        font-size: 5em;
+    }
+        

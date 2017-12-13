@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
@@ -24,25 +24,28 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+     border-radius: 20px;
+    
 }
 
 input[type=submit] {
-    background-color: pink;
+    background-color: #606464;
     font-size: 20px;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 input[type=submit]:hover {
-    background-color: gray;
+    background-color: #ec778a;
 }
 
 /* Style the container/contact section */
 .container {
     border-radius: 5px;
-    background-color:ghostwhite;
+    background-color:#ffffff;
     padding: 10px;
 }
 
@@ -52,6 +55,7 @@ input[type=submit]:hover {
     width: 50%;
     margin-top: 6px;
     padding: 20px;
+   
 }
 
 /* Clear floats after the columns */
@@ -60,7 +64,49 @@ input[type=submit]:hover {
     display: table;
     clear: both;
 }
-
+/*facebook icon */
+    .facebook{
+        width: 2em;
+        height: auto;
+    }
+/*    facebook linl*/
+    .FB{
+        text-decoration: none;
+        color: #ec778a;
+    }
+/*    instagram icon*/
+    .instagram{
+        width: 1.9em;
+        height: auto;
+    }
+/*    instagram link*/
+    .INSTA{
+        text-decoration: none;
+        color: #ec778a;
+    }
+/*    mail icon*/
+    .mail{
+        width: 2em;
+        height: auto;
+    }
+/*    mail link*/
+    .MAIL{
+        text-decoration: none;
+        color: #ec778a;
+    }
+/*    phone icon*/
+    .phone{
+        width: 1.5em;
+        height: auto;
+    }
+    .PHONE{
+        color: #ec778a;
+    }
+/*    h2 title Contacts*/
+    .contact{
+        color: #000000;
+    }
+    
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .column, input[type=submit] {
@@ -72,7 +118,7 @@ input[type=submit]:hover {
 </head>
 <body>
     <header>
-           <center><a href="index.html"><img id="logo" src="images/newlogo1.png"></a><center>
+           <center><a href="index.html"><img id="logo" src="images/newlogo1.png"></a><span onclick="openNav()"><img id="burger" src="images/BurgerMenu2.png"></span><center>
             <div id="desk">
                 
                 <a class="desko"href="index.html">Home</a>
@@ -89,8 +135,8 @@ input[type=submit]:hover {
             </ul>
   </div>
 </div>
-                <a class="desko" href="#">About Iri</a>
-                <a class="desko" href="#">Contacts</a>
+                <a class="desko" href="about.html">About Iri</a>
+                <a class="desko" href="contact.html">Contacts</a>
                 
                     
             
@@ -114,10 +160,10 @@ input[type=submit]:hover {
                     </div>
                 
                 
-  <a href="#">About Iri</a>
-  <a href="#">Contact us</a>
+  <a href="about.html">About Iri</a>
+  <a href="contact.html">Contact</a>
 </div>
-            <span onclick="openNav()"><img id="burger" src="images/burger.png"></span></center>
+            <span onclick="openNav()"><img id="burger"></span></center>
         </header>
     
 
@@ -129,13 +175,16 @@ input[type=submit]:hover {
     
   </div>
   <div class="row">
-       <h2> Contact us:</h2>
+       <h2 class="contact"> Contacts:</h2>
     <div class="column">
       <div>
-          <p>Facebook: https://www.facebook.com/IriJewelleryHandmade/</p> <br>
-          <p>Instagram: https://www.instagram.com/irijewellery/</p><br>
-          <p>Mail: iriJewellery@gmail.com</p><br>
-          <p>Phone: 81965781</p>
+         <img class="facebook" src="images/852231_square_512x51222.png">  <a class="FB"  href="https://www.facebook.com/IriJewelleryHandmade/" target="_blank"> <p>See Iri Jewellery page on facebook</p> </a> <br>
+          
+          <img class="instagram" src="images/Black_Instagram_icon.svg.png22.png"><a class="INSTA" href="https://www.instagram.com/irijewellery/" target="_blank"><p>Follow Iri Jewellery on Instagram</p></a><br>
+          
+          <img class="mail" src="images/envelopeicon22.png"> <a class="MAIL" href=""><p>Write to Iri Jewellery email for further information</p></a><br>
+          
+          <img class="phone" src="images/office-phone-icon--25.png"> <div class="PHONE"><p>Iri Jewellery phone number: 81965781 </p></div>
         
         </div>
     </div>
@@ -161,15 +210,7 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
-   <div class="footer">
-        
-        <div class="aha">
-    <img class="foot" src="images/instagram.png"><a class="SM" href="https://www.instagram.com/irijewellery/">Instagram</a>
-    <img class="foot" src="images/Mail-icon.png"><a class="SM" href="https://www.instagram.com/irijewellery/">irijewellry@gmail.com</a>
-    <img class="foot" src="images/Facebook-c.png"><a class="SM" href="https://www.facebook.com/IriJewelleryHandmade/">facebook</a></div>
-        
-        
-    </div>
+
 <script src="main.js">
 
 </script>

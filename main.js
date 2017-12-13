@@ -29,7 +29,9 @@ function closeNav() {
 
 
 function getallPosts() {
-  fetch("http://amberdream.dk/examwp/wp-json/wp/v2/posts?_embed").then(res=>res.json()).then(showEvents);
+  fetch("http://amberdream.dk/examwp/wp-json/wp/v2/posts?_embed&per_page=16")//database//
+      .then(res=>res.json())
+      .then(showEvents);
 }
 //for categories//
 function getPostsByTag(id) {
@@ -61,7 +63,7 @@ function closeNav() {
 function getMenu() {
   fetch(
     "http://amberdream.dk/examwp/wp-json/wp/v2/categories"
-  )
+  ) // taking from database categories//
     .then(e=>e.json())
     .then(showMenu);
 }

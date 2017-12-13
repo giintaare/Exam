@@ -3,39 +3,158 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Gallery</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-  html,
+  
 body {
    margin:0;
    padding:0;
    height:100%;
 }
+/*
 #cont {
+    background: red;
    min-height:100%;
    position:relative;
 }
+*/
 
+/*
 #main {
    padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
+   padding-bottom:60px;   
 }
+        
+*/
+        /* Height of the footer */
+/*
 #footer {
    position:absolute;
    bottom:0;
    width:100%;
-   height:60px;   /* Height of the footer */
+   height:60px;    Height of the footer 
    background-color: grey;
 }
+*/
         #logomain{
             height: 70px;
         }
 
     
     
+/* The side navigation menu */
+   .sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #606464;
     
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #ec778a;
+}
+/*        grid*/
+        section{
+          
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, 200px);
+            grid-template-rows: 3;
+        justify-content: center;
+        background-color:#ffffff;}
+        
+        #main{
+    display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+            grid-template-areas: 
+                
+            "  as sect bs  "
+                "  as sect bs "
+            
+           }
+    
+       section{
+                grid-area: sect;
+           align-content: center;
+/*
+           display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1em;
+               align-content: center;
+*/
+
+            }
+        aside{
+            grid-area: as;
+/*            background: red;*/
+        }
+        bside{
+            grid-area: bs;
+/*            background: blue;*/
+        }
+        
+       
+        @media screen and (max-width:500px){
+            
+           
+          #main{
+               
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                
+            "as  sect bs "
+                "as  sect bs"
+            
+           }
+    
+       section{
+                grid-area: sect;
+            }
+        aside{
+            grid-area: as;
+/*            background: red;*/
+        }
+        bside{
+            grid-area: bs;
+/*            background: blue;*/
+        }
+        
+         }
     
     </style>
 </head>
@@ -43,7 +162,7 @@ body {
 <body>
     <div id="cont">
   <header>
-           <center><a href="index.html"><img id="logo" src="images/newlogo1.png"></a><center>
+            <center><a href="index.html"><img id="logomain" src="images/newlogo1.png"></a><span onclick="openNav()"><img id="burger" src="images/BurgerMenu2.png"></span><center>
             <div id="desk">
                 
                 <a class="desko"href="index.html">Home</a>
@@ -60,8 +179,8 @@ body {
             </ul>
   </div>
 </div>
-                <a class="desko" href="#">About Iri</a>
-                <a class="desko" href="contact.html">Contacts</a>
+                <a class="desko" href="about.html">About Iri</a>
+                <a class="desko" href="contact.html">Contact</a>
                 
                     
             
@@ -85,10 +204,10 @@ body {
                     </div>
                 
                 
-  <a href="#">About Iri</a>
-  <a href="contact.html">Contact us</a>
+  <a href="about.html">About Iri</a>
+  <a href="contact.html">Contact</a>
 </div>
-            <span onclick="openNav()"><img id="burger" src="images/burger.png"></span></center>
+            <span onclick="openNav()"><img id="burger"></span></center>
         </header>
     
         <ul id="tagMenu">
@@ -111,15 +230,21 @@ body {
             
             
             <p><button class="butt"><a class="read-more" href="single.html">Details</a></button></p>
+            
         </article>
+                 
     </template>
-        </center>
-            </div>
         
+        </center>
+            <aside></aside>
+        <bside></bside>
+            </div>
+       
         
        
     
     </div>
+<!--
     <div class="footer">
         
         <div class="aha">
@@ -129,6 +254,7 @@ body {
         
         
     </div>
+-->
     <script src="main.js"></script>
     
 
